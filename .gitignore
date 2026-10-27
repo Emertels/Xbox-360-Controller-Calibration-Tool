@@ -1,0 +1,21 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & Zip archives (releases are uploaded via GitHub Releases)
+*.zip
+dist/
+build/
+
+# Environment & IDEs
+.env
+.venv
+env/
+venv/
+.idea/
+.vscode/
+
+# Local OS files
+Thumbs.db
+Desktop.ini
