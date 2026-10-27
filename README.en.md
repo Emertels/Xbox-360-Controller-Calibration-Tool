@@ -137,31 +137,36 @@ If you have replaced or are planning to replace the analog sticks on an Xbox 360
 
 ## 📦 Prerequisites & Quick Setup
 
-### Requirements:
-- **Windows 10** or **Windows 11** (64-bit)
-- **Python 3.10 or higher** ([Download from python.org](https://www.python.org/downloads/) — check *"Add python.exe to PATH"* during setup)
-- **PC Wireless Gaming Receiver** (for wireless controllers) or **USB Cable**
-- **ViGEmBus Driver** (required for the virtual gamepad feature in games)
+> [!IMPORTANT]
+> ### 🚨 Essential Requirements Before Using:
+> 1. **Python 3 installed on Windows:** When running the Python installer, **make sure to check the "Add python.exe to PATH" checkbox** on the first setup screen.
+> 2. **Run the dependency installer:** Before opening the tool for the first time, double-click **`INSTALAR_DEPENDENCIAS.bat`** to automatically download and configure all necessary libraries.
 
-### Step-by-Step Installation:
+### System Requirements:
+- **Windows 10** or **Windows 11** (64-bit)
+- **Python 3.10 or higher** ([Download from python.org](https://www.python.org/downloads/) — **check *"Add python.exe to PATH"*** during installation)
+- **PC Wireless Gaming Receiver** (for wireless controllers) or **USB Cable / Play & Charge**
+- **ViGEmBus Driver** (required to generate the calibrated virtual controller in games)
+
+### Step-by-Step Installation (Under 2 minutes):
 
 1. **Download the Release:**
-   - Grab `Xbox360_Calibration_Tool_v1.0.0.zip` from the [Releases](https://github.com/Emertels/Xbox-360-Controller-Calibration-Tool/releases) tab and extract it to any folder (e.g., `C:\Projetos\Calibration_Controle_Xbox_360`).
+   - Grab `Xbox360_Calibration_Tool_v1.0.0.zip` from the [Releases](https://github.com/Emertels/Xbox-360-Controller-Calibration-Tool/releases) tab and extract it to any folder on your PC.
 
-2. **Install Dependencies:**
+2. **Install Dependencies (Mandatory on first run):**
    - Double-click:
      ```cmd
      INSTALAR_DEPENDENCIAS.bat
      ```
-   - This script auto-detects Python and installs `vgamepad`.
+   - A command prompt will open, detect Python automatically, and install `vgamepad`. Once complete, press any key to close.
 
 3. **Install ViGEmBus Driver (Required for in-game use):**
    - Download and run the official ViGEmBus `.msi` installer:
      👉 [Download ViGEmBus Driver (GitHub Releases)](https://github.com/nefarius/ViGEmBus/releases)
-   - Standard setup: *Next → Next → Install*.
+   - Standard setup: click *Next → Next → Install*.
 
 4. **Launch the Tool:**
-   - **Silent Mode (No black console window):** Double-click **`INICIAR_SEM_CMD.vbs`**.
+   - **Silent Mode (No black console window, Recommended):** Double-click **`INICIAR_SEM_CMD.vbs`**.
    - **Batch script:** Double-click **`INICIAR.bat`**.
 
 ---

@@ -137,28 +137,33 @@ Se você substituiu os analógicos originais do seu controle Xbox 360, preste at
 
 ## 📦 Pré-requisitos & Instalação Rápida
 
-### Requisitos:
-- **Windows 10** ou **Windows 11** (64-bit)
-- **Python 3.10 ou superior** instalado no computador ([Baixar do site oficial](https://www.python.org/downloads/) — marque a opção *"Add python.exe to PATH"* durante a instalação)
-- **Receptor Wireless para PC** (se usar controle sem fio) ou **Cabo USB**
-- **ViGEmBus Driver** (necessário para a função de controle virtual nos jogos)
+> [!IMPORTANT]
+> ### 🚨 Atenção aos 2 Passos Obrigatórios antes de usar:
+> 1. **Você precisa ter o Python 3 instalado no Windows:** Ao instalar o Python, **é fundamental marcar a caixinha "Add python.exe to PATH"** na primeira tela do instalador.
+> 2. **Execute o instalador de dependências:** Antes de abrir o programa pela primeira vez, dê um duplo clique em **`INSTALAR_DEPENDENCIAS.bat`** para instalar as bibliotecas necessárias automaticamente.
 
-### Instalação Passo a Passo:
+### Requisitos do Sistema:
+- **Windows 10** ou **Windows 11** (64-bit)
+- **Python 3.10 ou superior** instalado no computador ([Baixar do site oficial](https://www.python.org/downloads/) — **marque a opção *"Add python.exe to PATH"***)
+- **Receptor Wireless para PC** (para controle sem fio) ou **Cabo USB / Play & Charge**
+- **ViGEmBus Driver** (necessário para gerar o controle virtual calibrado nos jogos)
+
+### Instalação Passo a Passo (Menos de 2 minutos):
 
 1. **Baixar o Projeto:**
-   - Baixe o arquivo `Xbox360_Calibration_Tool_v1.0.0.zip` na aba [Releases](https://github.com/Emertels/Xbox-360-Controller-Calibration-Tool/releases) e extraia em qualquer pasta (ex: `C:\Projetos\Calibration_Controle_Xbox_360`).
+   - Baixe o arquivo `Xbox360_Calibration_Tool_v1.0.0.zip` na aba [Releases](https://github.com/Emertels/Xbox-360-Controller-Calibration-Tool/releases) e extraia em qualquer pasta do seu PC.
 
-2. **Instalar Dependências:**
+2. **Instalar Dependências (Obrigatório na primeira vez):**
    - Dê um duplo clique no arquivo:
      ```cmd
      INSTALAR_DEPENDENCIAS.bat
      ```
-   - O script detectará automaticamente sua instalação do Python e instalará a biblioteca `vgamepad`.
+   - Uma janela preta se abrirá, detectará o Python automaticamente e instalará o pacote `vgamepad`. Quando terminar, pressione qualquer tecla para fechar.
 
-3. **Instalar o Driver ViGEmBus (Necessário para jogar):**
+3. **Instalar o Driver ViGEmBus (Obrigatório para reconhecer o controle nos jogos):**
    - Baixe e execute o instalador oficial `.msi` do ViGEmBus:
      👉 [Baixar ViGEmBus Driver (Releases no GitHub)](https://github.com/nefarius/ViGEmBus/releases)
-   - Instalação padrão: *Next → Next → Install*.
+   - Instalação padrão: clique em *Next → Next → Install*.
 
 4. **Iniciar a Ferramenta:**
    - **Sem janela preta de console (Recomendado):** Dê duplo clique em **`INICIAR_SEM_CMD.vbs`**.
